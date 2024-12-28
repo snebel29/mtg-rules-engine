@@ -8,7 +8,7 @@ export class List<T> {
   }
 
   // Add an element to the end of the list.
-  push(item: T): void {
+  add(item: T): void {
     this.items.push(item);
   }
 
