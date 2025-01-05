@@ -44,7 +44,7 @@ export class List<T> {
   }
 
   // Get the number of elements in the list.
-  size(): number {
+  count(): number {
     return this.items.length;
   }
 
