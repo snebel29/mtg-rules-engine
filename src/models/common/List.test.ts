@@ -1,4 +1,4 @@
-import { List } from '../models/common/List';
+import { List } from './List';
 
 describe('List class', () => {
   let list: List<number>;

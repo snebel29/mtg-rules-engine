@@ -1,4 +1,4 @@
-import { Stack } from '../models/common/Stack';
+import { Stack } from './Stack';
 
 describe('Stack', () => {
   let stack: Stack<number>;
