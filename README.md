@@ -37,4 +37,4 @@ npm run fmt
 Run [prettier](https://prettier.io/docs/en/) to check if source code in `/src` is already formatted.
 ```shell
 npm run fmt-check
-``
+```
