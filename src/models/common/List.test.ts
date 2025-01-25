@@ -119,4 +119,14 @@ describe('List class', () => {
     expect(stringList.pop()).toBe('Hello');
     expect(stringList.isEmpty()).toBe(true);
   });
+
+  test('should shuffle the elements in the list', () => {
+    const list = new List<number>([1, 2, 3, 4, 5]);
+    const originalOrder = list.getItems().slice();
+    list.shuffle();
+    const shuffledOrder = list.getItems();
+
+    expect(shuffledOrder).not.toEqual(originalOrder);
+    expect(shuffledOrder.sort()).toEqual(originalOrder.sort());
+  });
 });

@@ -53,6 +53,14 @@ export class List<T> {
     this.items = [];
   }
 
+  // Shuffle the elements in the list.
+  shuffle(): void {
+    for (let i = this.items.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [this.items[i], this.items[j]] = [this.items[j], this.items[i]];
+    }
+  }
+
   // Convert the list to a string (for easy logging or debugging).
   toString(): string {
     return this.items.join(', ');
